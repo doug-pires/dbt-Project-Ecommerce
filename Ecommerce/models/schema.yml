@@ -1,0 +1,18 @@
+version: 2 
+models: 
+  - name: dim_gender
+    columns:
+
+      - name: gender_id
+        tests: 
+          - unique
+          - not_null
+
+  - name: fact_ecommerce
+    columns: 
+    
+      - name: PRODUCT_IMPORTANCE_ID
+        tests:
+          - accepted_values:
+              values: ['Low','Medium','High']
+    
