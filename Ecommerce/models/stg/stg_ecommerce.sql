@@ -4,7 +4,10 @@ WITH stg_ecommerce AS (
     SELECT
         *
     FROM
-        ecommerce.raw.ecommerce_raw
+        {{ source(
+            'ecommerce',
+            'ecommerce_raw'
+        ) }}
 )
 SELECT
     id AS id_row,

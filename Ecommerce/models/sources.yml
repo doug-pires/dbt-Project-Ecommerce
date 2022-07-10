@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+ - name: ecommerce
+   schema: raw
+   tables:
+    - name: ecommerce_raw
+      identifier: ecommerce_raw
+   
