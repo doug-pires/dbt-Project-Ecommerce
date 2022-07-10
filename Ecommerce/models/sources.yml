@@ -6,4 +6,3 @@ sources:
    tables:
     - name: ecommerce_raw
       identifier: ecommerce_raw
-   
