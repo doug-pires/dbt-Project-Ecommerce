@@ -1,0 +1,6 @@
+---
+# This dbt package contains macros that can be (re)used across dbt projects.
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 0.8.6
+...
