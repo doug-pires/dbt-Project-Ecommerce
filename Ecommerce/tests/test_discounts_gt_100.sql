@@ -1,4 +1,5 @@
 -- Build a query to check if there are discounts offered greater than 100%
+-- Only run dbt test to check it out
 SELECT
     *
 FROM
