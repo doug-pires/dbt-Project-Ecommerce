@@ -17,7 +17,7 @@ WITH fact_ecommerce AS(
         gender AS gender_id,
         discount_offered,
         weight_in_gms,
-        ROUND (div0 (weight_in_gms, 1000), 1) weight_in_kgs
+        {{  gms_to_kgs('weight_in_gms')  }}
     FROM
         {{ ref('stg_ecommerce') }}
 )
