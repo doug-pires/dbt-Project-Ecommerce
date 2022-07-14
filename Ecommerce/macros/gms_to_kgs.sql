@@ -1,4 +1,4 @@
 -- Build a macrthat convert mgs to kgs
 {%- macro gms_to_kgs(column_name) -%}
-    ROUND (div0 ({{ column_name }}, 1000), 1)
+    ROUND (div0 ({{ column_name }}, 1000), 1) as weight_in_kgs
 {%- endmacro -%}
