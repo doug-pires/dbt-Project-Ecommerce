@@ -15,4 +15,3 @@ models:
         tests:
           - accepted_values:
               values: ['Low','Medium','High']
-    

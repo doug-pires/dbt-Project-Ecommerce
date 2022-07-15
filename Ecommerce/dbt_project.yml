@@ -24,6 +24,13 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+# Added variables to config the dim dates, we could build an MACRO to get the min and maximum values from our fact table
+
+vars:
+  year_min: 2019
+  year_max: 2022
+  nome: douglas
+
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
