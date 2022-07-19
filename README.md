@@ -12,4 +12,4 @@ Then I kicked off the transformation, setting up the snowflake, creating roles, 
 Ending the process I put this data into a schema DEV, but I could be another schema in PRODUCTION.
 I consumed this Data using Power BI.
 
-<All commit was done in the main branch, I did not create another branch to commit the code>
+>All commit was done in the main branch, I did not create another branch to commit the code
