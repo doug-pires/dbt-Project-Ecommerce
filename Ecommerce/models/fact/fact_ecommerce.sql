@@ -16,8 +16,11 @@ WITH fact_ecommerce AS(
         product_importance AS product_importance_id,
         gender AS gender_id,
         discount_offered,
+        CAST (
+            '01/01/2022' AS DATE
+        ) AS date_stock,
         weight_in_gms,
-        {{  gms_to_kgs('weight_in_gms')  }}
+        {{ gms_to_kgs('weight_in_gms') }}
     FROM
         {{ ref('stg_ecommerce') }}
 )
