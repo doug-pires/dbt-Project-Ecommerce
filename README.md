@@ -1,4 +1,4 @@
-# dbt-Project-Ecommerce-
+# dbt-Project-Ecommerce
 ## A **portfolio** to transform data using **dbt**. I used dbt core with Snowflake.
 All process was made thinking about the best practices, using virtual enviroment, sources, CTE, and other things.
 [Dataset](https://www.kaggle.com/datasets/surajjha101/stores-area-and-sales-data) is from Kaggle.  I uploaded the CSV file into Snowflake using the **snowsql CLI**. This was made to mimic an integration with other tools, such as Fivetran, ADF, etc.
