@@ -7,7 +7,7 @@ Then I kicked off the transformation, setting up the snowflake, creating roles, 
 * Two Macros made by me
 * One singular test  made by me and others were **generic tests**
 * Created Source yml file.
-* Parametrized my dimension of date, to pick what year I'd like to start and end. Adding parameters vars in yml file dbt_project and using the in data_spine SQL Generator from dbtutils package.
+* Parametrized my dimension of date, to pick what year I'd like to start and end. Adding parameters vars in yml file dbt_project and utilizing it in data_spine SQL Generator from dbtutils package.
 
 Ending the process I put this data into a schema DEV, but I could be another schema in PRODUCTION.
 I consumed this Data using Power BI.
