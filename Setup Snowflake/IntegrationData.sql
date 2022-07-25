@@ -35,7 +35,7 @@ FROM @ecommerce_stage (file_format => CSV_ECOMMERCE ) c LIMIT 10;
 
 -- Creating table into Supermarket data in Schema Raw, table named Stores
 -- It could be any tool for Data Integration such as Fivetran, ADF and so on.
-USE SUPERMARKET.RAW;
+USE ECOMMERCE.RAW;
 
 CREATE OR REPLACE TABLE ECOMMERCE_RAW (
 ID DOUBLE,
@@ -52,7 +52,7 @@ Weight_in_gms DOUBLE,
 Reached_on_Time_Y_N INTEGER
 ) ;
 
-COPY INTO ECOMMERCE_RAW FROM @ECOMMERCE.RAW.ecommerce_stage
+COPY INTO ECOMMERCE FROM @ECOMMERCE.RAW.ecommerce_stage
 FILE_FORMAT = (type = 'CSV' skip_header = 1
 FIELD_OPTIONALLY_ENCLOSED_BY = '"')
 ON_ERROR = 'skip_file';
